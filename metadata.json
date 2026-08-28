@@ -1,0 +1,6 @@
+{
+  "name": "The Horizon Engine",
+  "description": "Modular interactive visual & audio engine for The Horizon Engine series featuring generative canvas shaders, interactive stem mixing, episode controllers, and asset inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

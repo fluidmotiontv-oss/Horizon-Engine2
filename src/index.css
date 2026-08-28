@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --obsidian: #070709;
+  --deep-space: #111218;
+  --cyan: #00F0FF;
+  --magenta: #FF007F;
+  --violet: #8A2BE2;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.12);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--obsidian);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Frosted Glass classes */
+.frosted-glass {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.frosted-glass-card {
+  background: rgba(17, 18, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.35);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.35);
+}
+
+.glow-violet {
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.35);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(7, 7, 9, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
